@@ -3,8 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { FaShoppingCart, FaBars, FaTimes, FaSearch } from "react-icons/fa";
-// import Contact from "../Contact/page";
-// import NotFoundCard from "../Notfound";
+
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -15,7 +14,6 @@ const Header = () => {
     { name: "Menu", path: "/menu" },
     { name: "Popular", path: "/popular" },
     { name: "Contact", path: "/contact" },
-    //  { name: "*", path: <Notfound /> },
   ];
   return (
     <header className="bg-gradient-to-r from-orange-500 to-yellow-400 text-white shadow-lg sticky top-0 z-50">
@@ -53,9 +51,7 @@ const Header = () => {
           {/* Cart */}
           <div className="relative cursor-pointer text-xl">
             <FaShoppingCart />
-            <span className="absolute -top-2 -right-2 bg-black text-white text-xs px-1.5 rounded-full">
-              2
-            </span>
+            
           </div>
 
           {/* Mobile Menu Icon */}

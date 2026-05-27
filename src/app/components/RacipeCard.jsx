@@ -39,9 +39,11 @@ const RecipeCard = ({ image, title, time, rating ,id}) => {
         </div>
 
         {/* Button */}
+        <Link href={`/overview/${id}`}>
         <button className="w-full bg-orange-500 cursor-pointer text-white py-2 rounded-lg hover:bg-orange-600 transition">
           View Recipe
         </button>
+        </Link>
 
       </div>
     </div>

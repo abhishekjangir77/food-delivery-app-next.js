@@ -19,26 +19,26 @@ export default function Contact() {
 
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-xl shadow-lg">
-            <h2 className="text-2xl font-semibold mb-6">Send a Message</h2>
+            <h2 className="text-2xl text-gray-500 font-semibold mb-6">Send a Message</h2>
 
             <form className="space-y-4">
 
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="w-full border text-black  p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
               />
 
               <input
                 type="email"
                 placeholder="Email Address"
-                className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="w-full border text-black p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
               />
 
               <textarea
                 placeholder="Your Message"
                 rows="4"
-                className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="w-full border text-black p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
               />
 
               <button className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition">

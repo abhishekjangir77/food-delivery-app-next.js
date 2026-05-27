@@ -1,9 +1,4 @@
-// export default async function   Getapi(items) {
-//     const recipes = await fetch("https://dummyjson.com/recipes")
-//     const data = await recipes.json()
-//     return(data.recipes);
 
-// }
 
 async function fetchRecipe() {
   const res = await fetch("https://dummyjson.com/recipes");

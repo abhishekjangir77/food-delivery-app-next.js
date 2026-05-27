@@ -1,6 +1,7 @@
 import React from "react";
 import { FaUtensils } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -21,14 +22,21 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="mt-6 flex gap-4">
+            <Link href='/menu'>
             <button className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition flex items-center gap-2">
               <FaUtensils />
               Explore Recipes
             </button>
+            </Link>
 
+            
+            <Link href='/menu'>
             <button className="border border-orange-500 text-orange-500 px-6 py-3 rounded-lg hover:bg-orange-500 hover:text-white transition">
               View Menu
             </button>
+            </Link>
+
+            
           </div>
         </div>
 
